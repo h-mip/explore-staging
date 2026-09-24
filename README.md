@@ -33,6 +33,6 @@ The production site is intended for [h-mip.com/explore](https://h-mip.com/explor
 
 ## Embeds
 
-Map embeds are available at `/embed/ca/map/`, `/embed/es/map/` and `/embed/en/map/` under either site's base path. Staging also previews the hour, month, activity and place embeds with synthetic-data labels; production generates them only when verified survey results are enabled. Embeds are marked `noindex`.
+The full map's “Share map” control copies either a link to the current view or ready-to-paste iframe code. Map embeds are available at `/embed/ca/map/`, `/embed/es/map/` and `/embed/en/map/` under either site's base path. Staging also previews the hour, month, activity and place embeds with synthetic-data labels; production generates them only when verified survey results are enabled. Embeds are marked `noindex`.
 
 Site code is GPL-3.0-only. Model estimates are CC0 1.0; site texts and figures are CC BY 4.0. ICGC boundaries require CC BY 4.0 attribution, and the basemap requires OpenStreetMap attribution.

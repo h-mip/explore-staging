@@ -1,6 +1,7 @@
 import { AttributionControl, Map as MapLibreMap, NavigationControl, setWorkerUrl, type ExpressionSpecification, type GeoJSONSource } from "maplibre-gl";
 import type { Feature, FeatureCollection, MultiPolygon, Polygon } from "geojson";
 import { mapLibreContent, type MapLocale } from "../data/mapLibre";
+import "./mapShare";
 import "maplibre-gl/dist/maplibre-gl.css";
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 
@@ -268,6 +269,7 @@ async function initializeMap(root: HTMLElement): Promise<void> {
       target.search = url.search;
       link.href = target.href;
     });
+    root.dispatchEvent(new Event("mapviewchange"));
   }
 
   function updateSelectionLayer(): void {
