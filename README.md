@@ -29,7 +29,7 @@ The map data is a provisional model run. The time, activity and headline CSVs co
 
 The public staging site is [h-mip.com/explore-staging](https://h-mip.com/explore-staging/), deployed from [h-mip/explore-staging](https://github.com/h-mip/explore-staging). Staging is marked `noindex` but remains publicly accessible. It previews the survey sections and chart embeds with prominent synthetic-data labels, per-section show/hide controls, and staging-only example stories. This does not change the production publication switch. The staging workflow validates and builds before publishing.
 
-The production site is intended for [h-mip.com/explore](https://h-mip.com/explore/) from [h-mip/explore](https://github.com/h-mip/explore). The production workflow is separate and only deploys from that repository's `main`. A root-domain `robots.txt` must be published by the repository that owns `h-mip.com/`; a file under `/explore/` cannot replace it.
+The production site is live at [h-mip.com/explore](https://h-mip.com/explore/) from [h-mip/explore](https://github.com/h-mip/explore). Its workflow deploys only from that repository's `main`, after validation and a successful build. Preview changes on staging and review them before merging to production. The root-domain `robots.txt` belongs to the separate repository that serves `h-mip.com/`; the copy under `/explore/` does not control crawlers for the domain.
 
 ## Embeds
 
