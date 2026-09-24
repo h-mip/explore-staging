@@ -17,7 +17,7 @@ const skip = { en: "Skip to content", es: "Saltar al contenido", ca: "Salta al c
     <link rel="icon" type="image/x-icon" href={internalUrl("favicon.ico")} />
     <title>{title}</title>
   </head>
-  <body class="embed-body"><a class="skip-link" href="#main-content">{skip}</a><main id="main-content"><slot /></main><script src="../scripts/dataTooltips.ts"></script></body>
+  <body class="embed-body"><a class="skip-link" href="#main-content">{skip}</a><main id="main-content" aria-label={title}><slot /></main><script src="../scripts/dataTooltips.ts"></script></body>
 </html>
 
 <style is:global>

@@ -30,4 +30,4 @@ Si té dificultats per utilitzar alguna part d'aquest web, o necessita informaci
 
 ## Sobre aquesta declaració
 
-Aquesta declaració està en revisió. Hi afegirem la data de l'avaluació quan s'hagin completat les proves automàtiques i les comprovacions manuals amb el teclat.
+Avaluat el 24 de setembre de 2026 amb proves automàtiques i comprovacions manuals amb el teclat de la navegació, el mapa i la seva alternativa en forma de taula, els gràfics, els controls per compartir i les vistes incrustades. És una autoavaluació, no una certificació WCAG independent. Revisarem aquesta declaració quan canviï el web.

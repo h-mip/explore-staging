@@ -30,4 +30,4 @@ Si tiene dificultades para usar alguna parte de este sitio, o necesita informaci
 
 ## Sobre esta declaración
 
-Esta declaración está en revisión. Añadiremos la fecha de la evaluación cuando se hayan completado las pruebas automáticas y las comprobaciones manuales con el teclado.
+Evaluado el 24 de septiembre de 2026 mediante pruebas automáticas y comprobaciones manuales con el teclado de la navegación, el mapa y su tabla alternativa, los gráficos, los controles para compartir y las vistas integradas. Se trata de una autoevaluación, no de una certificación WCAG independiente. Revisaremos esta declaración cuando cambie el sitio.

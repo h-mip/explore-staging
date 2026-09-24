@@ -30,4 +30,4 @@ If you have difficulty using any part of this website, or need information in a 
 
 ## About this statement
 
-This statement is under review. We will add the assessment date when automated and manual keyboard checks are complete.
+Assessed on 24 September 2026 through automated checks and manual keyboard checks of navigation, the map and its table alternative, charts, sharing controls, and embedded views. This was a self-assessment, not an independent WCAG certification. We will review this statement as the site changes.
