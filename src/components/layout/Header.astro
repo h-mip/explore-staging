@@ -1,5 +1,5 @@
 ---
-import { internalUrl, routes, type Locale } from "../../utils/urls";
+import { internalUrl, mainSiteUrls, routes, type Locale } from "../../utils/urls";
 import { getCollection } from "astro:content";
 import { siteSettings } from "../../data/siteSettings";
 import { isPublishedStory } from "../../data/stories";
@@ -42,14 +42,19 @@ const alternateRoutes = {
 const navAriaLabel = { en: "Primary navigation", es: "Navegación principal", ca: "Navegació principal" }[locale];
 const languageAriaLabel = { en: "Language", es: "Idioma", ca: "Idioma" }[locale];
 const menuLabel = { en: "Menu", es: "Menú", ca: "Menú" }[locale];
+const productName = locale === "en" ? "Explore" : "Explora";
+// The H-MIP logo leads to the main project site; the product name leads to this site's home page.
+const projectSiteLabel = { en: "H-MIP project website", es: "Sitio web del proyecto H-MIP", ca: "Lloc web del projecte H-MIP" }[locale];
 ---
 
 <header class="site-header">
   <div class="header-inner wrap">
-    <a class="brand" href={currentRoutes.home} aria-label={`H-MIP ${locale === "en" ? "Explore" : "Explora"} — ${currentLabels.home}`}>
-      <img src={internalUrl("logos/hmip-logo-white.png")} alt="" width="290" height="116" />
-      <span class="brand-product">{locale === "en" ? "Explore" : "Explora"}</span>
-    </a>
+    <div class="brand">
+      <a class="brand-logo" href={mainSiteUrls[locale]}>
+        <img src={internalUrl("logos/hmip-logo-white.png")} alt={projectSiteLabel} width="290" height="116" />
+      </a>
+      <a class="brand-product" href={currentRoutes.home} aria-label={`H-MIP ${productName} — ${currentLabels.home}`}>{productName}</a>
+    </div>
 
     <nav class="main-nav" aria-label={navAriaLabel}>
       {navItems.map(([key, label]) => {
@@ -79,10 +84,11 @@ const menuLabel = { en: "Menu", es: "Menú", ca: "Menú" }[locale];
 <style>
   .site-header{position:sticky;top:0;z-index:50;background:rgba(7,21,18,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
   .header-inner{display:flex;align-items:center;gap:24px;min-height:var(--header-height)}
-  .brand{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none;white-space:nowrap}
-  .brand:hover{color:var(--ink);text-decoration:none}
+  .brand{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+  .brand a{text-decoration:none}
+  .brand-logo{display:block}
   .brand img{display:block;width:auto;height:31px}
-  .brand-product{color:var(--teal);font-family:var(--serif);font-style:italic;font-weight:650}
+  .brand-product,.brand-product:hover{color:var(--teal);font-family:var(--serif);font-style:italic;font-weight:650}
 
   .main-nav{display:flex;align-items:stretch;gap:0}
   .main-nav a{position:relative;display:flex;align-items:center;padding:17px 10px 15px;color:#aebdb8;text-decoration:none;white-space:nowrap;font-size:.82rem;font-weight:650}

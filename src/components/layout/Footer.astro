@@ -1,5 +1,5 @@
 ---
-import { internalUrl, routes, type Locale } from "../../utils/urls";
+import { internalUrl, mainSiteUrls, routes, type Locale } from "../../utils/urls";
 import { getCollection } from "astro:content";
 import { siteSettings } from "../../data/siteSettings";
 import { isPublishedStory } from "../../data/stories";
@@ -69,7 +69,7 @@ const content = {
 const copy = content[locale];
 const links = routes[locale];
 const hasStories = (await getCollection("stories", (entry) => isPublishedStory(entry) && entry.data.locale === locale)).length > 0;
-const projectUrl = locale === "es" ? "https://h-mip.com/es/" : "https://h-mip.com/en/";
+const projectUrl = mainSiteUrls[locale];
 ---
 
 <footer class="site-footer">

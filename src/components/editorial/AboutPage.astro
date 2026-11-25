@@ -3,11 +3,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import type { HomeLocale } from "../../data/home";
 import { aboutContent } from "../../data/about";
 import { publications } from "../../data/publications";
+import { mainSiteUrls } from "../../utils/urls";
 
 interface Props { locale: HomeLocale }
 const { locale } = Astro.props;
 const copy = aboutContent[locale];
-const projectUrl = locale === "es" ? "https://h-mip.com/es/" : "https://h-mip.com/en/";
+const projectUrl = mainSiteUrls[locale];
 const resultsUrl = locale === "es" ? "https://cordis.europa.eu/project/id/853271/results/es" : "https://cordis.europa.eu/project/id/853271/results";
 ---
 

@@ -15,14 +15,10 @@ Contacto: John R.B. Palmer, john.palmer@upf.edu
 
 ## Qué no hace este sitio web
 
-- No utiliza cookies.
+- No utiliza cookies ni guarda ninguna otra información en su navegador.
 - No utiliza analíticas, estadísticas de visitas, publicidad ni complementos de redes sociales.
 - No tiene cuentas, formularios ni carga de archivos, por lo que no puede enviarnos ninguna información a través del sitio.
 - La búsqueda de municipios se hace íntegramente en su navegador. Lo que escribe no se envía a ninguna parte.
-
-## Qué se guarda en su navegador
-
-El sitio puede recordar el idioma que elija para abrirse en ese idioma la próxima vez. Esta preferencia se queda en su navegador, no se nos envía ni a nosotros ni a nadie más, y puede borrarla cuando quiera eliminando los datos del sitio en su navegador.
 
 ## Terceros que intervienen cuando visita el sitio
 

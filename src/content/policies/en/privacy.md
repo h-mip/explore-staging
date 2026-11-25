@@ -15,14 +15,10 @@ Contact: John R.B. Palmer, john.palmer@upf.edu
 
 ## What this website does not do
 
-- It does not use cookies.
+- It does not use cookies or keep any other information in your browser.
 - It does not use analytics, visitor statistics, advertising or social media widgets.
 - It has no accounts, forms or uploads, so you cannot send us any information through it.
 - Searching for a municipality happens entirely in your browser. What you type is not sent anywhere.
-
-## What is kept in your browser
-
-The website may remember the language you choose, so that it opens in that language next time. This setting stays in your browser, is never sent to us or anyone else, and you can delete it at any time by clearing your browser's site data.
 
 ## Third parties involved when you visit
 

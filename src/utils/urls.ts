@@ -5,6 +5,13 @@ export function internalUrl(path: string): string {
   return `${base}${path.replace(/^\/+/, "")}`;
 }
 
+// Home page of the main project site (h-mip.com) in each language. Catalan is at the root.
+export const mainSiteUrls = {
+  ca: "https://h-mip.com/",
+  es: "https://h-mip.com/es/",
+  en: "https://h-mip.com/en/",
+} as const satisfies Record<Locale, string>;
+
 export const routes = {
   en: {
     home: internalUrl("en/"),

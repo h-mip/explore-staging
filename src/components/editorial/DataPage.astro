@@ -3,13 +3,13 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import type { HomeLocale } from "../../data/home";
 import { dataPageContent } from "../../data/dataPage";
 import { researchOutputs, type OutputKind } from "../../data/outputs";
-import { internalUrl } from "../../utils/urls";
+import { internalUrl, mainSiteUrls } from "../../utils/urls";
 
 interface Props { locale: HomeLocale }
 const { locale } = Astro.props;
 const copy = dataPageContent[locale];
 const kinds: OutputKind[] = (["dataset", "code", "other"] as OutputKind[]).filter((kind) => researchOutputs.some((output) => output.kind === kind));
-const projectUrl = locale === "es" ? "https://h-mip.com/es/" : "https://h-mip.com/en/";
+const projectUrl = mainSiteUrls[locale];
 const resultsUrl = locale === "es" ? "https://cordis.europa.eu/project/id/853271/results/es" : "https://cordis.europa.eu/project/id/853271/results";
 const extra = {
   en: { source: "Website source code", sourceText: "The site's source code and update guide are available on GitHub under GPL-3.0.", credits: "Municipal and comarca boundaries © ICGC, CC BY 4.0. Basemap © OpenStreetMap contributors (ODbL)." },

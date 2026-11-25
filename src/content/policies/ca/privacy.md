@@ -15,14 +15,10 @@ Contacte: John R.B. Palmer, john.palmer@upf.edu
 
 ## Què no fa aquest web
 
-- No fa servir galetes.
+- No fa servir galetes ni desa cap altra informació al seu navegador.
 - No fa servir analítiques, estadístiques de visites, publicitat ni complements de xarxes socials.
 - No té comptes, formularis ni càrrega de fitxers, de manera que no ens pot enviar cap informació a través del web.
 - La cerca de municipis es fa íntegrament al seu navegador. El que escriu no s'envia enlloc.
-
-## Què es desa al seu navegador
-
-El web pot recordar l'idioma que triï perquè la propera vegada s'obri en aquest idioma. Aquesta preferència es queda al seu navegador, no se'ns envia ni a nosaltres ni a ningú altre, i la pot esborrar quan vulgui eliminant les dades del lloc al navegador.
 
 ## Tercers que intervenen quan visita el web
 
